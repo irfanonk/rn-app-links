@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": {
+      "A6U9778XLM.com.sorbil.sorbil": {
+        "paths": ["/sifre-sifirla/*"]
+      }
+    }
+  },
+  "activitycontinuation": {
+    "apps": ["A6U9778XLM.com.sorbil.sorbil"]
+  },
+  "webcredentials": {
+    "apps": ["A6U9778XLM.com.sorbil.sorbil"]
+  }
+}

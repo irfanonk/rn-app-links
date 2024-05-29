@@ -1,10 +1,12 @@
 [
-   {
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-         "namespace": "android_app",
-         "package_name": "com.sorbil.sorbil",
-         "sha256_cert_fingerprints": ["FF:6A:F5:2B:65:27:DE:3E:47:61:A2:02:22:87:77:59:C7:93:B7:FA:AA:0E:E5:51:21:81:21:DE:85:BF:3A:FB"]
-      }
-   }
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sorbil.sorbil",
+      "sha256_cert_fingerprints": [
+        "FF:6A:F5:2B:65:27:DE:3E:47:61:A2:02:22:87:77:59:C7:93:B7:FA:AA:0E:E5:51:21:81:21:DE:85:BF:3A:FB"
+      ]
+    }
+  }
 ]
