@@ -3,7 +3,7 @@
     "apps": [],
     "details": {
       "A6U9778XLM.com.sorbil.sorbil": {
-        "paths": ["/sifre-sifirla/*"]
+        "paths": ["/sifre-sifirla", "/sifre-sifirla/", "/sifre-sifirla/*"]
       }
     }
   },
