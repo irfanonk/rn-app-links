@@ -15,7 +15,7 @@ app.get('/', (req,res) => {
 })
 // Endpoint to serve JSON file
 app.get('/apple-app-site-association', (req, res) => {
-    const filePath = path.join(__dirname, 'apple-app-site-association-1.json');
+    const filePath = path.join(__dirname, 'apple-app-site-association-2.json');
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
             res.status(500).send('Error reading file');

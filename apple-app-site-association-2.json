@@ -1,0 +1,27 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["A6U9778XLM.com.sorbil.sorbil"],
+        "components": [
+          {
+            "/": "/sifre-sifirla/?",
+            "comment": "Matches any URL with a path that starts with /sifre-sifirla/."
+          },
+          {
+            "/": "/sifre-sifirla/?",
+            "?": { "email": "" },
+            "comment": "Matches any URL with a path that starts with /help/ and that has a query item with name 'email' and a value of exactly ... characters."
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["A6U9778XLM.com.sorbil.sorbil"]
+  },
+
+  "appclips": {
+    "apps": ["A6U9778XLM.com.sorbil.sorbil.Clip"]
+  }
+}
