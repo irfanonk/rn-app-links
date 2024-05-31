@@ -37,5 +37,5 @@ setInterval(() => {
     .catch(error => console.error(util.inspect(error, {showHidden: false, depth: null, colors: true}))
 );
 
-}, 120000);
+}, 180000);
 
