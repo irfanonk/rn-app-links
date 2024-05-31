@@ -15,27 +15,43 @@ async function fetchData(url) {
     }
 }
 
+const getRandomNumber = () =>Math.floor(Math.random() * 1000)
 
-const url1 = 'https://rn-app-links.onrender.com/apple-app-site-association';
-const url2 = 'https://rn-app-links.onrender.com/.well-known/assetlinks.json';
+const getUrl1 = () => 'https://rn-app-links.onrender.com/apple-app-site-association';
+const getUrl2 = (id) => `https://shopping-app-be.onrender.com/products/${id}`;
 
-let counter =0;
+const cron = () => {
 
-Promise.all([fetchData(url1), fetchData(url2)])
-    .then(data => console.log(util.inspect(data, {showHidden: false, depth: null, colors: true}))
-)
-    .catch(error => console.error(util.inspect(error, {showHidden: false, depth: null, colors: true}))
-);
-
-setInterval(() => {
-    console.log("counter", counter)
     
-    counter++;
-    Promise.all([fetchData(url1), fetchData(url2)])
-    .then(data => console.log(util.inspect(data, {showHidden: false, depth: null, colors: true}))
-)
-    .catch(error => console.error(util.inspect(error, {showHidden: false, depth: null, colors: true}))
-);
+    let counter =0;
+    
+    Promise.all([
+        // fetchData(getUrl1()),
+        fetchData(getUrl2 (getRandomNumber()) )])
+        .then(data => console.log(util.inspect(data, {showHidden: false, depth: null, colors: true}))
+    )
+        .catch(error => console.error(util.inspect(error, {showHidden: false, depth: null, colors: true}))
+    );
+    
+    setInterval(() => {
+        console.log("counter", counter)
 
-}, 120000);
+
+        
+        counter++;
+        Promise.all([
+            // fetchData(getUrl1()),
+            
+            fetchData(getUrl2 (getRandomNumber()) )])
+        .then(data => console.log(util.inspect(data, {showHidden: false, depth: null, colors: true}))
+    )
+        .catch(error => console.error(util.inspect(error, {showHidden: false, depth: null, colors: true}))
+    );
+    
+    }, 1000*60*14.5);// Render spins down a Free web service that goes 15 minutes without receiving inbound traffic.
+}
+
+
+
+module.exports = {cron}
 
